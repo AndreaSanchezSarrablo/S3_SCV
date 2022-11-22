@@ -7,10 +7,8 @@ Then we should use one of these videos, in my case I choose the bbbVideo.mp4 con
 
     -We get the input video and convert it to a 5 seconds video in order to then be able to do the explained
     extensions in a short period of time.
-    -We resize the video into 480p format because is the one we want to convert later to VP8, VP9, 
-    h265 and AV1 formats.
-    -Finally, converts the bbbVideo of 5 seconds and 480p format into the extensions: VP8,
-    VP9, h265 and AV1.
+    -We resize the video into 480p format because is the one we want to convert later to VP8, VP9, h265 and AV1 formats.
+    -Finally, converts the bbbVideo of 5 seconds and 480p format into the extensions: VP8, VP9, h265 and AV1.
     
 ### Create a video containing a mosaic of the 4 videos generated before (with different formats):
 The creation of a video containing together the visualisation of the 4 formats in a mosaic is done with an ffmpeg command and you can find it in the 'Create4VideosMosaic.py' python file in this respository.
