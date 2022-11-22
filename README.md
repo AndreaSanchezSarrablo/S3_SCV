@@ -13,7 +13,8 @@ Then we should use one of these videos, in my case I choose the bbbVideo.mp4 con
 ### Create4VideosMosaic.py:
 The creation of a video containing together the visualisation of the 4 formats in a mosaic is done with an ffmpeg command and you can find it in the 'Create4VideosMosaic.py' python file in this respository.
 
-Analyze by yourself and comment how these codecs work at each bitrate!! HACER
+Regarding the bitrate changes in each codec, when putting al videos in a mosaic of 4 videos we can clearly see that although the video generated with all of the four videos has its own bitrate (mosaic video), all the videos that has been created with different codecs have their own bitrates. When computing the different output videos with different codecs, I set the bitrate in all codecs as 1M, this way it will be easier to compare the quality/time of each one. I have observed that when using the AV1 codec we need much more time to encode it than when computing VP8, VP9 or h265.
+
 
 ### interface.py:
 Finally, I have created an interface putting all the above together. In this interface called 'Video converter program' a user is able to import a video from his/her computer. The imported video should be in '.mp4' format and then the user is able to apply transformations to that input video. The different transformations that the user is capable of doing are done by clicking the buttons CONVERT TO (VP8, VP9, h265, AV1) and the video is directly saved in the directory where the program is being runned with the followuing names respectively: output_vp8.webm, output_vp9.webm, output_h265.mp4, output_av1.mkv.
