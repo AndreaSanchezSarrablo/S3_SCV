@@ -19,5 +19,7 @@ Analyze by yourself and comment how these codecs work at each bitrate!! HACER
 Finally, I have created an interface putting all the above together. In this interface called 'Video converter program' a user is able to import a video from his/her computer. The imported video should be in '.mp4' format and then the user is able to apply transformations to that input video. The different transformations that the user is capable of doing are done by clicking the buttons CONVERT TO (VP8, VP9, h265, AV1) and the video is directly saved in the directory where the program is being runned with the followuing names respectively: output_vp8.webm, output_vp9.webm, output_h265.mp4, output_av1.mkv.
 The interface has also a button to end the program. You can leave the program by clicking the button 'Quit'.
 
+![Screenshot](interface.png)
+
 
 
